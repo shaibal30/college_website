@@ -22,21 +22,4 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-        
-        public function abc($name) {
-           //$name="shaibal";
-           $this->load->view('abc',array('name'=> $name)); 
-            
-        }
-        public function db(){
-            //creating an object of test model class.
-            $this-> load->model('test_model');
-            
-            //accesing the object $this->test_model(class name)
-            $r= $this->test_model->get_data_from_table();
-            
-            //printing the return associative array.
-            print_r($r);  
-            
-        }
 }
