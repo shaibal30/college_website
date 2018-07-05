@@ -14,8 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div>
            <h1>~ROYAL UNIVERSITY~</h1> 
         </div>
-
-        <form method="POST" action="login_submit.php">
+        <form method="POST" action="http://127.0.0.1/college_website/index.php/login/submit">
             <ul id= menu>
                 <li><a class="active" href="#home">Home</a></li>
                 <li class="courses">
@@ -32,12 +31,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li><a href="#about">About</a></li>
             </ul>
         </form>
-        <form method="GET">
+        <form method="POST" action="http://127.0.0.1/college_website/index.php/login/submit">
             <div id= container>
                 username
                 <input type="text" name="username"/>
                 id
-                <input type"text" name="id"/>
+                <input type=text" name="user_id"/>
                 password
                 <input type="password" name="password"/>
                 <br/>
@@ -45,4 +44,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </form>
     </body>
-</html>   
+</html   
